@@ -122,42 +122,8 @@ const ResponsiveAppBar = () => {
           
               </Typography>
             {/* Relativo al botón hamburguesa */}
-            <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             
-                {/* Despliega el menú hamburguesa */}
-                <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleOpenNavMenu}
-                color="inherit"
-                >
-                <MenuIcon />
-                </IconButton>
-
-                {/* Revela la lista de las páginas */}
-                <Menu
-                id="menu-appbar"
-                anchorEl={anchorElNav}
-                anchorOrigin={{
-                    vertical: 'bottom',
-                    horizontal: 'left',
-                }}
-                keepMounted
-                transformOrigin={{
-                    vertical: 'top',
-                    horizontal: 'left',
-                }}
-                open={Boolean(anchorElNav)}
-                onClose={handleCloseNavMenu}
-                sx={{
-                    display: { xs: 'block', md: 'none' },
-                }}
-                >
- 
-                </Menu>
-            </Box>
+             
             
             {/* Despliega "el Bichito" en pantalla xs hasta medium  */}
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
